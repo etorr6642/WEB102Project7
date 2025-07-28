@@ -56,3 +56,44 @@
 .moreButton:hover {
     cursor: pointer;
 }
+
+.Card {
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 1rem;
+  color: white;
+  transition: 0.3s ease;
+}
+
+/* Color-based classes */
+.Card.red {
+  background-color: #e74c3c;
+}
+
+.Card.blue {
+  background-color: #3498db;
+}
+
+.Card.green {
+  background-color: #2ecc71;
+}
+
+.Card.yellow {
+  background-color: #f1c40f;
+  color: black; /* better contrast for yellow */
+}
+
+.powerImage {
+  width: 100px;      /* fixed width */
+  height: 100px;     /* fixed height */
+  object-fit: contain;  /* keep aspect ratio without stretching */
+  margin-top: 0.5rem;
+  display: block;   /* ensures it takes up its own line */
+}
+
+.powerContainer {
+  display: flex;
+  justify-content: center;  /* center horizontally */
+  align-items: center;      /* center vertically */
+
+}
