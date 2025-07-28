@@ -4,7 +4,7 @@ Submitted by: **Edward Torres**
 
 This web app: **allows the user to create their own team of superheros. They will have the opportunity to pick an ability and a chosen color. The superhero will then show up on the homescreen with a personalized photo and background color. **
 
-Time spent: **X** hours spent in total
+Time spent: **5** hours spent in total
 
 ## Required Features
 
@@ -49,7 +49,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+https://i.imgur.com/wvkUxWq.gif
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ScreenToGif
@@ -57,7 +57,7 @@ GIF created with ScreenToGif
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+There were very little challenges for this project. The lab prepared me for the setup and I just had to develop the idea behind it and a way to make it stand out. I did have to do some research to find out how to change the background of a card to a color selected as well as how to develop a summary of each character based on the characteristics chosen by the user. 
 
 ## License
 
