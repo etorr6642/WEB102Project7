@@ -4,47 +4,32 @@ import { useRoutes } from 'react-router-dom'
 import ShowCrew from './pages/ShowCrew'
 import CreateCrew from './pages/CreateCrew';
 import EditCrew from './pages/EditCrew'
+import CrewSummary from './pages/CrewSummary'
 import { Link } from 'react-router-dom'
 
 
 const App = () => {
   
-  const descr = 'Red'
-
-  const posts = [
-      {'id':'1', 
-      'name': ' Chelsea 🤸🏽‍♀️',
-      'power':'Harvey Milian', 
-      'color': descr},
-      {'id':'2', 
-      'name': ' Paris 🔒',
-      'power':'Beauford Delaney', 
-      'color':descr},
-      {'id':'3', 
-      'name': 'Pink',
-      'power':'Onika Tonya', 
-      'color':descr},
-      {'id':'4', 
-      'name': ' Dog 🐶',
-      'power':'Denise Michelle', 
-      'color':descr},
-  ]
-
 
   // Sets up routes
   let element = useRoutes([
     {
       path: "/",
-      element:<ShowCrew data={posts}/>
+      element:<ShowCrew />
     },
     {
       path:"/edit/:id",
-      element: <EditCrew data={posts} />
+      element: <EditCrew  />
     },
     {
       path:"/new",
       element: <CreateCrew />
+    },
+    {
+      path:"/summary/:id",
+      element: <CrewSummary/>
     }
+
   ]);
 
   return ( 

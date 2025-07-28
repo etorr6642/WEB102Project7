@@ -35,11 +35,15 @@ const Card = (props) =>  {
           className="powerImage"
         />
       )}
+       
       </div>
+      <Link to={`/summary/${props.id}`}>
       <h2 className="name">{props.name}</h2>
       <h3 className="power">{"Power: " + props.power}</h3>
       <p className="color">{"Color: " + props.color}</p>
+      </Link>
     </div>
+    
   );
 };
 

@@ -12,7 +12,7 @@ const ShowCrew = (props) => {
             const {data} = await supabase
                 .from('crewmates')
                 .select()
-                .order('id', { ascending: true });
+                .order('created_at', { ascending: false });
 
             // set state of posts
             setCrew(data)
@@ -27,7 +27,7 @@ const ShowCrew = (props) => {
             {
                 crew && crew.length > 0 ?
                 [...crew]
-                .sort((a, b) => a.id - b.id)
+        
                 .map((c,index) => 
                     <Card 
                         key={c.id}
